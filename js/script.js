@@ -206,8 +206,8 @@ d3.json("js/us_93_02_v3.json", function(error, us) {
 					.translate([width / 2, ((height / 2) + 45)])             
 			} else if (width <= 900) {
 				projection
-					.scale(width * 1.2)
-					.translate([width / 2, ((height / 2) + 30)])  
+					.scale(width * 1.05)
+					.translate([width / 2, ((height / 2) + 10)])  
 			} 
 
 			// full viewport
@@ -315,7 +315,7 @@ d3.json("js/us_93_02_v3.json", function(error, us) {
 
 		function BuildBubbles(w, type) {		
 			pymChild.sendHeight();
-			
+
 					// (function ($) { 
 			var gotype = $("select").val()
 					// }(jQuery));  
