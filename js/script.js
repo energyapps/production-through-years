@@ -306,14 +306,16 @@ d3.json("js/us_93_02_v3.json", function(error, us) {
 			//define here instead of there because if global resets it to 0 automatically which is NOT good :)
 			var type = typeArray[k][i]  // where to start
 
-			pymChild.sendHeight();
 			
+
 			BuildBubbles(width, type);
 		}
 		
 		// Tooltips section goes here
 
 		function BuildBubbles(w, type) {		
+			pymChild.sendHeight();
+			
 					// (function ($) { 
 			var gotype = $("select").val()
 					// }(jQuery));  
